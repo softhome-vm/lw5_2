@@ -1,0 +1,29 @@
+{
+    "name": "gamer/lw5-application",
+    "type": "project",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "gamer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/softhome-vm/lw5_1.git"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "gamer/lw5-library": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gamer\\Lw5\\Snacks\\": "src/Snacks/",
+            "Gamer\\Lw5\\Factories\\": "src/Factories/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
